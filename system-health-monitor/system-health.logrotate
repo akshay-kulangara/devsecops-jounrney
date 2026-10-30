@@ -1,0 +1,8 @@
+/opt/system-health-monitor/system_health.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    copytruncate
+}
