@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Runtime files
+*.log
+*.tmp
+
+# Generated health/state files
+system_health.json
+alert_state.json
+
+# Secrets/configuration
+.env
+*.secret
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
