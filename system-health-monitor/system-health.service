@@ -1,0 +1,16 @@
+[Unit]
+Description=EC2 System Health Monitoring Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ec2-user
+WorkingDirectory=/opt/system-health-monitor
+ExecStart=/usr/bin/python3 /opt/system-health-monitor/system_infoo.py
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
